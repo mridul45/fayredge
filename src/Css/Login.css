@@ -1,0 +1,109 @@
+.login_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login_container_part1{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/Login.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.login_container_part2{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color:bisque;
+}
+
+
+.login_container_part2 .part2_logo{
+    margin-left: 10rem;
+    width: 80%;
+    height: 10%;
+    background-image: url('../images/fayredgeLogo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.login_container_part2 .part2_form{
+    width: 70%;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.login_container_part2 .part2_form .form .form_email{
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    margin-top: 5rem;
+}
+
+
+.login_container_part2 .part2_form .form .form_email input{
+    margin-top: 0.3rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(138, 96, 138);
+    color: white;
+}
+
+
+.login_container_part2 .part2_form .form .form_password{
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    margin-top: 1rem;
+}
+
+
+.login_container_part2 .part2_form .form .form_password input{
+    margin-top: 0.3rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(138, 96, 138);
+    color: white;
+}
+
+
+.btn{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: rgb(119, 46, 187);
+    color: whitesmoke;
+}
+
+
+h5{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -8rem;
+}
+
+
+.form_email input::placeholder,
+.form_password input::placeholder {
+    color: white;
+    opacity: 1;
+}
