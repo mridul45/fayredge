@@ -36,8 +36,8 @@
 .part2_logo {
   margin-top: 2rem;
   margin-left: 3rem;
-  width: 70%;
-  height: 30%;
+  width: 55%;
+  height: 25%;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -98,7 +98,7 @@
 
 .btn {
   width: 30%;
-  margin-left: 15rem;
+  margin-left: 14rem;
   padding: 0.5rem;
   border-radius: 20px;
   border: 1px solid black;
@@ -110,7 +110,7 @@
 
 
 h5 {
-  margin-left: 16rem;
+  margin-left: 15rem;
   margin-top: 2rem;
 }
 
