@@ -117,7 +117,7 @@ function Login() {
                 <button
                   type="button"
                   onClick={togglePasswordVisibility}
-                  className="absolute inset-y-0 right-0 flex items-center pr-3"
+                  className=""
                 >
                   {showPassword ? (
                     <HiEyeOff className="text-gray-500" />
