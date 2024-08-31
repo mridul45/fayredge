@@ -3,6 +3,7 @@ import "../Css/Components/Login.css";
 import LoginImg from "/loginImg.png";
 import Logo from "/logo.png";
 import { HiEye, HiEyeOff } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -11,6 +12,7 @@ function Login() {
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+  const navigation = useNavigate();
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -61,7 +63,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Done");
+    navigation("/home");
   };
 
   return (
