@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "../Css/Components/Login.css";
 import LoginImg from "/loginImg.png";
 import Logo from "/logo.png";
-import { HiEye, HiEyeOff } from "react-icons/hi";
+import { HiEye, HiEyeOff, HiMail } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
@@ -86,14 +86,18 @@ function Login() {
               <label htmlFor="email" className="form_label">
                 Email
               </label>
-              <input
-                className="form-input"
-                id="email"
-                type="text"
-                placeholder="Enter email"
-                value={email}
-                onChange={handleEmailChange}
-              />
+              <div className="relativeBox">
+                <input
+                  className="form-input"
+                  id="email"
+                  type="text"
+                  placeholder="Enter email"
+                  value={email}
+                  onChange={handleEmailChange}
+                />
+                <HiMail className="input-color" />
+              </div>
+
               {emailError && <p className="error-message">{emailError}</p>}
             </div>
 
@@ -102,7 +106,7 @@ function Login() {
                 <label htmlFor="password" className="form_label">
                   Password
                 </label>
-                <p>Forgot Password?</p>
+                <p className="forPass">Forgot Password?</p>
               </div>
 
               <div className="relativeBox">
@@ -120,9 +124,9 @@ function Login() {
                   className=""
                 >
                   {showPassword ? (
-                    <HiEyeOff className="text-gray-500" />
+                    <HiEyeOff className="input-color" />
                   ) : (
-                    <HiEye className="text-gray-500" />
+                    <HiEye className="input-color" />
                   )}
                 </button>
               </div>
