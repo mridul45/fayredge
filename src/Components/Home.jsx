@@ -1,10 +1,12 @@
+import HomeTable from "./HomeTable";
 import AppLogo from "/logo.png";
+import "../Css/Components/Home.css";
 
 const Home = () => {
   return (
-    <div className="h-screen w-full flex bg-[#F8F9FE]">
+    <div className="h-first">
       {/* side bar */}
-      <div className="w-2/12 h-full border-r-2 border-gray-300 p-3 flex flex-col justify-start items-center gap-5">
+      <div className="h-sidebar">
         <img src={AppLogo} className="px-2 py-4" />
         <div className="mt-10 flex flex-col gap-3">
           {/* Home */}
@@ -90,18 +92,16 @@ const Home = () => {
         </div>
       </div>
       {/* main bar */}
-      <main className="w-10/12 h-full ">
+      <main className="h-main">
         {/* Nav Bar */}
-        <div className="w-full pl-4 pr-6 h-14 bg-white flex flex-wrap justify-between items-center">
+        <div className="h-nav-outer">
           {/* Home part */}
-          <div className="h-full flex justify-center items-center hover:cursor-pointer text-[#6E4D9D] font-semibold hover:border-b-2 hover:border-[#6E4D9D]">
-            Home
-          </div>
+          <div className="h-h-div">Home</div>
           {/* Profile part */}
-          <div className="flex justify-center items-center gap-6">
+          <div className="h-p-div">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5"
+              className="h-p-svg"
               id="bell"
               viewBox="0 0 1792 1792"
             >
@@ -110,9 +110,9 @@ const Home = () => {
                 d="M912 1696q0-16-16-16-59 0-101.5-42.5T752 1536q0-16-16-16t-16 16q0 73 51.5 124.5T896 1712q16 0 16-16zm816-288q0 52-38 90t-90 38h-448q0 106-75 181t-181 75-181-75-75-181H192q-52 0-90-38t-38-90q50-42 91-88t85-119.5 74.5-158.5 50-206T384 576q0-152 117-282.5T808 135q-8-19-8-39 0-40 28-68t68-28 68 28 28 68q0 20-8 39 190 28 307 158.5T1408 576q0 139 19.5 260t50 206 74.5 158.5 85 119.5 91 88z"
               ></path>
             </svg>
-            <div className="flex h-full text-xs font-medium flex-col justify-end items-end">
-              <p className="text-sm">A@sut</p>
-              <p className="text-teal-400">ASutradhar</p>
+            <div className="h-p-inn">
+              <p className="h-p-2">A@sut</p>
+              <p className="h-p-2">ASutradhar</p>
               <p className="">amit@gmail.com</p>
             </div>
             <img
@@ -122,13 +122,13 @@ const Home = () => {
           </div>
         </div>
         {/* Client div */}
-        <div className="w-full pl-4 pr-6 gap-3">
-          <h2 className="pt-3 text-[#6E4D9D] font-semibold">Clients</h2>
-          <div className="flex gap-3 justify-between bg-white py-1 items-start">
+        <div className="h-c-outer">
+          <h2 className="h-c-h2">Clients</h2>
+          <div className="h-c-inn">
             {/* first div */}
-            <div className="flex justify-center gap-2 items-start">
+            <div className="h-c-f">
               {/* search box */}
-              <div className="flex my-1 bg-gray-200 gap-1 rounded-lg">
+              <div className="h-c-s">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -152,11 +152,11 @@ const Home = () => {
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="bg-gray-200 focus:outline-none rounded-lg"
+                  className="h-c-s-input"
                 />
               </div>
               {/* Sort box */}
-              <div className="flex justify-center items-center py-1 gap-1 px-2 border-r-2">
+              <div className="h-s-f-outer">
                 <h3>Sort</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -169,11 +169,11 @@ const Home = () => {
                 </svg>
               </div>
               {/* Filter */}
-              <div className="flex justify-center items-center gap-1 py-1 px-2 border-r-2">
+              <div className="h-s-f-outer">
                 <h3>Filter</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-p-svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   id="sort"
@@ -193,7 +193,7 @@ const Home = () => {
                 </svg>
               </div>
               {/* Select All */}
-              <div className="flex justify-center items-center gap-1 py-1 px-2">
+              <div className="h-s-outer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -211,13 +211,15 @@ const Home = () => {
               </div>
             </div>
             {/* second div */}
-            <div className="flex justify-center items-center pr-1 border-l-2 pl-2">
-              Export
-            </div>
+            <div className="h-s-last">Export</div>
           </div>
         </div>
         {/* Table Start Here */}
-        
+        <HomeTable />
+        <div className="h-b-outer">
+          <button className="h-b-btn">Assgn Client User(s)</button>
+          <button className="h-b-btn">Onboard New Client</button>
+        </div>
       </main>
     </div>
   );
