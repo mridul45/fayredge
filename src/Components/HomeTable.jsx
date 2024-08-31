@@ -1,5 +1,5 @@
 import { data } from "../dummyData.js";
-// impo;
+import "../Css/Components/HomeTable.css";
 const HomeTable = () => {
   return (
     <>
