@@ -17,9 +17,9 @@ function Login() {
   };
 
   const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^\s@]+@fayredge\.com$/;
     if (!emailRegex.test(email)) {
-      setEmailError("Email must be in the format: xyz@gmail.com");
+      setEmailError("Email must be in the format: yourname@fayredge.com");
     } else {
       setEmailError("");
     }
