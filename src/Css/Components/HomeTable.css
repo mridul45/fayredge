@@ -1,0 +1,63 @@
+.ht-out {
+  @apply w-full  h-4/6 pt-2 pl-4 pr-6 scrollbar-thin scrollbar-webkit;
+}
+.ht-inn {
+  @apply h-full overflow-x-auto rounded-lg;
+}
+.ht-t {
+  @apply w-full h-1/6 text-sm text-left rounded-lg shadow-md rtl:text-right text-gray-500;
+}
+.ht-head {
+  @apply text-xs text-gray-600 rounded-lg shadow-md bg-gray-200;
+}
+.ht-th-1 {
+  @apply p-4 w-12;
+}
+.ht-th-outer {
+  @apply flex items-center;
+}
+.ht-th-s-i {
+  @apply w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500;
+}
+.ht-th-label-1 {
+  @apply sr-only;
+}
+.h-t {
+  @apply px-6 py-3 min-w-12;
+}
+.h-t-1 {
+  @apply px-6 py-3 min-w-40;
+}
+.h-t-2 {
+  @apply px-6 py-3 min-w-56;
+}
+.h-t-3 {
+  @apply px-6 py-3 min-w-24;
+}
+.t-b-outer {
+  @apply rounded-lg shadow-md;
+}
+.tb-tr {
+  @apply bg-white border-b hover:bg-gray-50;
+}
+.tb-th-1 {
+  @apply px-6 py-4 w-40 font-medium text-gray-900 whitespace-nowrap;
+}
+.t-d-1 {
+  @apply px-6 py-4 w-40;
+}
+.t-d-2 {
+  @apply px-6 py-4 w-24;
+}
+.t-d-svg {
+  @apply w-5 h-5;
+}
+.td-2-last {
+  @apply w-full flex flex-wrap text-gray-600;
+}
+.td-2-last-h3 {
+  @apply bg-blue-200 rounded-lg  px-2 py-1 m-1;
+}
+.td-last-h3 {
+  @apply bg-purple-300 rounded-lg px-2 py-1 m-1;
+}

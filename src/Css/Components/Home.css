@@ -5,7 +5,7 @@
   @apply w-2/12 h-full border-r-2 border-gray-300 p-3 flex flex-col justify-start items-center gap-5;
 }
 .h-side-img {
-  @apply px-2 py-4 w-44 h-14;
+  @apply px-2 py-4 w-40 h-16;
 }
 .h-side-outer {
   @apply mt-10 flex flex-col gap-3;
@@ -29,7 +29,13 @@
   @apply w-full pl-4 pr-6 h-14 bg-white flex flex-wrap justify-between items-center;
 }
 .h-h-div {
-  @apply h-full flex justify-center items-center hover:cursor-pointer text-[#6E4D9D] font-semibold hover:border-b-2 hover:border-[#6E4D9D];
+  @apply h-full flex justify-center items-center hover:cursor-pointer text-[#6E4D9D] hover:text-blue-500 font-semibold hover:border-b-2 hover:border-blue-500;
+}
+.h-h-div-active {
+  @apply border-b-2 border-[#6E4D9D];
+}
+.h-h-div-inactive {
+  @apply border-none;
 }
 .h-p-div {
   @apply flex justify-center items-center gap-6;

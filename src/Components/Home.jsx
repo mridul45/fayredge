@@ -1,6 +1,7 @@
 import HomeTable from "./HomeTable";
 import AppLogo from "/logo.png";
 import "../Css/Components/Home.css";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -96,7 +97,14 @@ const Home = () => {
         {/* Nav Bar */}
         <div className="h-nav-outer">
           {/* Home part */}
-          <div className="h-h-div">Home</div>
+          <NavLink
+            to="/home"
+            className={({ isActive }) =>
+              `h-h-div ${isActive ? " h-h-div-active" : "h-h-div-inactive"}`
+            }
+          >
+            Home
+          </NavLink>
           {/* Profile part */}
           <div className="h-p-div">
             <svg

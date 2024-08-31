@@ -1,90 +1,91 @@
 import { data } from "../dummyData.js";
 import "../Css/Components/HomeTable.css";
+
 const HomeTable = () => {
   return (
     <>
-      <div className="w-full  h-4/6 pt-2 pl-4 pr-6 scrollbar-thin scrollbar-webkit">
-        <div className=" h-full overflow-x-auto rounded-lg">
-          <table className="w-full h-1/6 text-sm text-left rounded-lg shadow-md rtl:text-right text-gray-500">
-            <thead className="text-xs text-gray-600 rounded-lg shadow-md bg-gray-200">
+      <div className="ht-out">
+        <div className="ht-inn">
+          <table className="ht-t">
+            <thead className="ht-head">
               <tr>
-                <th scope="col" className="p-4 w-12">
+                <th scope="col" className="ht-th-1">
                   {/* Checkbox column */}
-                  <div className="flex items-center">
+                  <div className="ht-th-outer">
                     <input
                       id="checkbox-all-search"
                       type="checkbox"
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600"
+                      className="ht-th-s-i"
                     />
-                    <label htmlFor="checkbox-all-search" className="sr-only">
+                    <label
+                      htmlFor="checkbox-all-search"
+                      className="ht-th-label-1"
+                    >
                       checkbox
                     </label>
                   </div>
                 </th>
-                <th scope="col" className="px-6 py-3 min-w-12">
+                <th scope="col" className="h-t">
                   Client
                 </th>
-                <th scope="col" className="px-6 py-3 min-w-12">
+                <th scope="col" className="h-t">
                   Product
                 </th>
-                <th scope="col" className="px-6 py-3 min-w-40">
+                <th scope="col" className="h-t-1">
                   PO Number
                 </th>
-                <th scope="col" className="px-6 py-3 min-w-40">
+                <th scope="col" className="h-t-1">
                   Total Stakeholders
                 </th>
-                <th scope="col" className="px-6 py-3 min-w-40">
+                <th scope="col" className="h-t-1">
                   Client User License
                 </th>
-                <th scope="col" className="px-6 py-3 min-w-56">
+                <th scope="col" className="h-t-2">
                   Validity
                 </th>
-                <th scope="col" className="px-6 py-3 min-w-56">
+                <th scope="col" className="h-t-2">
                   Stakeholders in-scope
                 </th>
-                <th scope="col" className="px-6 py-3 min-w-56">
+                <th scope="col" className="h-t-2">
                   Generals in-scope
                 </th>
-                <th scope="col" className="px-6 py-3 min-w-24">
+                <th scope="col" className="h-t-3">
                   Action
                 </th>
               </tr>
             </thead>
-            <tbody className="rounded-lg shadow-md">
-              <tr className="bg-white border-b hover:bg-gray-50">
-                <td className="w-12 p-4">
+            <tbody className="t-b-outer">
+              <tr className="tb-tr">
+                <td className="ht-th-1">
                   {/* Checkbox column */}
-                  <div className="flex items-center">
+                  <div className="ht-th-outer">
                     <input
                       id="checkbox-table-search-1"
                       type="checkbox"
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600"
+                      className="ht-th-s-i"
                     />
                     <label
                       htmlFor="checkbox-table-search-1"
-                      className="sr-only"
+                      className="ht-th-label-1"
                     >
                       checkbox
                     </label>
                   </div>
                 </td>
-                <th
-                  scope="row"
-                  className="px-6 py-4 w-40 font-medium text-gray-900 whitespace-nowrap"
-                >
+                <th scope="row" className="tb-th-1">
                   Google
                 </th>
-                <td className="px-6 py-4 w-40">-</td>
-                <td className="px-6 py-4 w-40">-</td>
-                <td className="px-6 py-4 w-40">-</td>
-                <td className="px-6 py-4 w-40">-</td>
-                <td className="px-6 py-4 w-40">-</td>
-                <td className="px-6 py-4 w-40">-</td>
-                <td className="px-6 py-4 w-40">-</td>
-                <td className="px-6 py-4 w-24">
+                <td className="t-d-1">-</td>
+                <td className="t-d-1">-</td>
+                <td className="t-d-1">-</td>
+                <td className="t-d-1">-</td>
+                <td className="t-d-1">-</td>
+                <td className="t-d-1">-</td>
+                <td className="t-d-1">-</td>
+                <td className="t-d-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5"
+                    className="t-d-svg"
                     viewBox="0 0 32 32"
                     id="edit"
                   >
@@ -93,62 +94,53 @@ const HomeTable = () => {
                   </svg>
                 </td>
               </tr>
-              <tr className="bg-white border-b hover:bg-gray-50">
-                <td className="w-12 p-4">
+              <tr className="tb-tr ">
+                <td className="ht-th-1">
                   {/* Checkbox column */}
-                  <div className="flex items-center">
+                  <div className="ht-th-outer">
                     <input
                       id="checkbox-table-search-1"
                       type="checkbox"
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600"
+                      className="ht-th-s-i"
                     />
                     <label
                       htmlFor="checkbox-table-search-1"
-                      className="sr-only"
+                      className="ht-th-label-1"
                     >
                       checkbox
                     </label>
                   </div>
                 </td>
-                <th
-                  scope="row"
-                  className="px-6 py-4 w-40 font-medium text-gray-900 whitespace-nowrap"
-                >
+                <th scope="row" className="tb-th-1">
                   Pranaya
                 </th>
-                <td className="px-6 py-4 min-w-40">EXP 360 Now</td>
-                <td className="px-6 py-4 min-w-40">AR_4466</td>
-                <td className="px-6 py-4 min-w-40">07</td>
-                <td className="px-6 py-4 min-w-40">2102</td>
-                <td className="px-6 py-4 min-w-40">Jan 01,23-Dec 31,23</td>
-                <td className="px-6 py-4 min-w-40">
-                  <div className="w-full flex flex-wrap text-gray-600">
+                <td className="h-t-2 ">EXP 360 Now</td>
+                <td className="t-d-1">AR_4466</td>
+                <td className="t-d-1">07</td>
+                <td className="t-d-1">2102</td>
+                <td className="t-d-1">Jan 01,23-Dec 31,23</td>
+                <td className="t-d-1">
+                  <div className="td-2-last">
                     {data.map((item, index) => (
-                      <h3
-                        className="bg-blue-200 rounded-lg  px-2 py-1 m-1"
-                        key={index}
-                      >
+                      <h3 className="td-2-last-h3" key={index}>
                         {item}
                       </h3>
                     ))}
                   </div>
                 </td>
-                <td className="px-6 py-4 min-w-40">
-                  <div className="w-full flex flex-wrap text-gray-600">
+                <td className="t-d-1">
+                  <div className="td-2-last">
                     {data.map((item, index) => (
-                      <h3
-                        className="bg-blue-200 rounded-lg  px-2 py-1 m-1"
-                        key={index}
-                      >
+                      <h3 className="td-last-h3" key={index}>
                         {item}
                       </h3>
                     ))}
                   </div>
                 </td>
-                <td className="px-6 py-4 min-w-24">
+                <td className="t-d-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 h-5"
+                    className="t-d-svg"
                     viewBox="0 0 32 32"
                     id="edit"
                   >
