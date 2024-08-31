@@ -4,6 +4,24 @@
 .h-sidebar {
   @apply w-2/12 h-full border-r-2 border-gray-300 p-3 flex flex-col justify-start items-center gap-5;
 }
+.h-side-img {
+  @apply px-2 py-4;
+}
+.h-side-outer {
+  @apply mt-10 flex flex-col gap-3;
+}
+.h-inn {
+  @apply w-full p-2 flex flex-col gap-1 justify-center items-center;
+}
+.h-in-btn {
+  @apply w-10 h-10 bg-gray-400 rounded-xl hover:bg-purple-400 focus:bg-purple-400 flex items-center justify-center;
+}
+.h-in-sgv {
+  @apply w-7 h-7;
+}
+.h-in-p {
+  @apply overflow-hidden text-center;
+}
 .h-main {
   @apply w-10/12 h-full;
 }
@@ -19,6 +37,7 @@
 .h-p-svg {
   @apply w-5 h-5;
 }
+
 .h-p-inn {
   @apply flex h-full text-xs font-medium flex-col justify-end items-end;
 }
@@ -27,6 +46,9 @@
 }
 .h-p-2 {
   @apply text-teal-400;
+}
+.h-p-image {
+  @apply w-10 h-10 rounded-lg;
 }
 .h-c-outer {
   @apply w-full pl-4 pr-6 gap-3;

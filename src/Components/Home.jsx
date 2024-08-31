@@ -7,14 +7,14 @@ const Home = () => {
     <div className="h-first">
       {/* side bar */}
       <div className="h-sidebar">
-        <img src={AppLogo} className="px-2 py-4" />
-        <div className="mt-10 flex flex-col gap-3">
+        <img src={AppLogo} className="h-side-img" />
+        <div className="h-side-outer">
           {/* Home */}
-          <div className="w-full p-2 flex flex-col gap-1 justify-center items-center">
-            <button className="w-10 h-10 bg-gray-400 rounded-xl hover:bg-purple-400 focus:bg-purple-400 flex items-center justify-center">
+          <div className="h-inn">
+            <button className="h-in-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-7 h-7"
+                className="h-in-sgv"
                 viewBox="0 0 24 24"
                 id="home"
               >
@@ -25,16 +25,16 @@ const Home = () => {
                 ></path>
               </svg>
             </button>
-            <p className="overflow-hidden text-center">Home</p>
+            <p className="h-in-p">Home</p>
           </div>
           {/* Roket */}
-          <div className="w-full p-2 flex flex-col gap-1 justify-center items-center">
-            <button className="w-10 h-10 bg-gray-400 rounded-xl hover:bg-purple-400 focus:bg-purple-400 flex items-center justify-center">
+          <div className="h-inn">
+            <button className="h-in-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlSpace="preserve"
                 viewBox="0 0 20 20"
-                className="w-7 h-7"
+                className="h-in-sgv "
                 stroke="white"
                 id="rocket"
               >
@@ -44,15 +44,15 @@ const Home = () => {
                 ></path>
               </svg>
             </button>
-            <p className="overflow-hidden text-center">Onboard</p>
+            <p className="h-in-p">Onboard</p>
           </div>
           {/* Client */}
-          <div className="w-full p-2 flex flex-col gap-1 justify-center items-center">
-            <button className="w-10 h-10 bg-gray-400 rounded-xl hover:bg-purple-400 focus:bg-purple-400 flex items-center justify-center">
+          <div className="h-inn">
+            <button className="h-in-btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
-                className="w-7 h-7 "
+                className="h-in-sgv"
                 id="client"
               >
                 <path
@@ -61,14 +61,14 @@ const Home = () => {
                 ></path>
               </svg>
             </button>
-            <p className="overflow-hidden text-center">Client Users</p>
+            <p className="h-in-p">Client Users</p>
           </div>
           {/* Sub */}
-          <div className="w-full p-2 flex flex-col gap-1 justify-center items-center">
-            <button className="w-10 h-10 bg-gray-400 rounded-xl hover:bg-purple-400 focus:bg-purple-400 flex items-center justify-center">
+          <div className="h-inn">
+            <button className="h-in-btn ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-7 h-7"
+                className="h-in-sgv"
                 fill="none"
                 viewBox="0 0 128 128"
                 id="menu-open"
@@ -87,7 +87,7 @@ const Home = () => {
                 </defs>
               </svg>
             </button>
-            <p className="overflow-hidden text-center">Client Subscriptions</p>
+            <p className="h-in-p">Client Subscriptions</p>
           </div>
         </div>
       </div>
@@ -116,7 +116,7 @@ const Home = () => {
               <p className="">amit@gmail.com</p>
             </div>
             <img
-              className="w-10 h-10 rounded-lg"
+              className="h-p-image"
               src="https://plus.unsplash.com/premium_photo-1675080431524-3e7c85323972?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFuJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D"
             />
           </div>
