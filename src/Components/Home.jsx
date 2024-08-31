@@ -111,9 +111,9 @@ const Home = () => {
               ></path>
             </svg>
             <div className="h-p-inn">
-              <p className="h-p-2">M@sin</p>
-              <p className="h-p-2">MSinghal</p>
-              <p className="">mridul@fayredge.com</p>
+              <p className="h-p-2">A@sut</p>
+              <p className="h-p-2">ASutradhar</p>
+              <p className="">amit@gmail.com</p>
             </div>
             <img
               className="h-p-image"
@@ -215,7 +215,11 @@ const Home = () => {
           </div>
         </div>
         {/* Table Start Here */}
-
+        <HomeTable />
+        <div className="h-b-outer">
+          <button className="h-b-btn">Assgn Client User(s)</button>
+          <button className="h-b-btn">Onboard New Client</button>
+        </div>
       </main>
     </div>
   );

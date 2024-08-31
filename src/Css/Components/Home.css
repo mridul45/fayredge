@@ -1,4 +1,3 @@
-
 .h-first {
   @apply h-screen w-full flex bg-[#F8F9FE];
 }
@@ -6,7 +5,7 @@
   @apply w-2/12 h-full border-r-2 border-gray-300 p-3 flex flex-col justify-start items-center gap-5;
 }
 .h-side-img {
-  @apply w-[12rem] h-[3rem];
+  @apply px-2 py-4;
 }
 .h-side-outer {
   @apply mt-10 flex flex-col gap-3;
@@ -15,7 +14,7 @@
   @apply w-full p-2 flex flex-col gap-1 justify-center items-center;
 }
 .h-in-btn {
-  @apply w-10 h-10 bg-gray-400 rounded-xl hover:bg-purple-400 focus:bg-purple-400 flex items-center justify-center;
+  @apply w-10 h-10 bg-gray-400 rounded-xl hover:bg-[#5A358F] focus:bg-[#5A358F] flex items-center justify-center;
 }
 .h-in-sgv {
   @apply w-7 h-7;
@@ -27,7 +26,7 @@
   @apply w-10/12 h-full;
 }
 .h-nav-outer {
-  @apply w-full pl-4 pr-6 h-20 bg-white flex flex-wrap justify-between items-center;
+  @apply w-full pl-4 pr-6 h-14 bg-white flex flex-wrap justify-between items-center;
 }
 .h-h-div {
   @apply h-full flex justify-center items-center hover:cursor-pointer text-[#6E4D9D] font-semibold hover:border-b-2 hover:border-[#6E4D9D];
@@ -52,28 +51,28 @@
   @apply w-10 h-10 rounded-lg;
 }
 .h-c-outer {
-  @apply w-full pl-4 pr-6 gap-3;
+  @apply w-full pr-6 gap-3;
 }
 .h-c-h2 {
-  @apply pt-3 py-8 text-[#6E4D9D] font-semibold;
+  @apply pt-3 pl-4 text-[#6E4D9D] font-semibold;
 }
 .h-c-inn {
-  @apply flex gap-3 justify-between bg-white p-3 items-start;
+  @apply flex gap-3 pl-4 h-14 justify-between bg-white py-1 rounded-r-xl items-center;
 }
 .h-c-f {
   @apply flex justify-center gap-2 items-start;
 }
 .h-c-s {
-  @apply flex my-1 bg-gray-200 gap-1 rounded-lg;
+  @apply flex my-1 py-2 bg-[#F1F3FF] gap-1 rounded-lg;
 }
 .h-c-s-input {
-  @apply bg-gray-200 p-1 focus:outline-none rounded-lg;
+  @apply bg-[#F1F3FF] focus:outline-none rounded-lg;
 }
 .h-s-f-outer {
-  @apply flex justify-center items-center py-1 gap-1 px-2 border-r-2;
+  @apply flex my-1 justify-center items-center py-1 gap-1 px-2 border-r-2;
 }
 .h-s-outer {
-  @apply flex justify-center items-center gap-1 py-1 px-2;
+  @apply flex my-1 justify-center items-center gap-1 py-1 px-2;
 }
 .h-s-last {
   @apply flex justify-center items-center pr-1 border-l-2 pl-2;
@@ -85,5 +84,5 @@
   @apply flex justify-start items-start gap-4 pl-4 pt-3;
 }
 .h-b-btn {
-  @apply px-6 py-2 text-center bg-purple-500 text-white font-semibold rounded-full;
+  @apply px-6 py-2 text-center bg-[#5A358F] text-white font-semibold rounded-full;
 }

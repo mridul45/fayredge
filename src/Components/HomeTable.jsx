@@ -3,10 +3,10 @@ import { data } from "../dummyData.js";
 const HomeTable = () => {
   return (
     <>
-      <div className="w-full h-4/6 pt-2 pl-4 pr-6 scrollbar-thin scrollbar-webkit">
-        <div className="relative h-full overflow-x-auto shadow-md sm:rounded-lg">
-          <table className="w-full h-1/6 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead className="text-xs text-gray-600 bg-gray-200">
+      <div className="w-full  h-4/6 pt-2 pl-4 pr-6 scrollbar-thin scrollbar-webkit">
+        <div className=" h-full overflow-x-auto rounded-lg">
+          <table className="w-full h-1/6 text-sm text-left rounded-lg shadow-md rtl:text-right text-gray-500">
+            <thead className="text-xs text-gray-600 rounded-lg shadow-md bg-gray-200">
               <tr>
                 <th scope="col" className="p-4 w-12">
                   {/* Checkbox column */}
@@ -50,7 +50,7 @@ const HomeTable = () => {
                 </th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="rounded-lg shadow-md">
               <tr className="bg-white border-b hover:bg-gray-50">
                 <td className="w-12 p-4">
                   {/* Checkbox column */}
