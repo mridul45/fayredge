@@ -2,20 +2,28 @@ import HomeTable from "./HomeTable";
 import AppLogo from "/logo.png";
 import "../Css/Components/Home.css";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Home = () => {
+
+  const [isDropdownOpen,setDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen);
+  }
+
   return (
-    <div className="h-first">
+    <div className="h-screen w-full flex bg-[#F8F9FE]">
       {/* side bar */}
-      <div className="h-sidebar">
-        <img src={AppLogo} className="h-side-img" />
-        <div className="h-side-outer">
+      <div className="w-2/12 h-full border-r-2 border-gray-300 p-3 flex flex-col justify-start items-center gap-5">
+        <img src={AppLogo} className="px-2 py-4 w-40 h-16" />
+        <div className="mt-10 flex flex-col gap-3">
           {/* Home */}
-          <div className="h-inn">
-            <button className="h-in-btn">
+          <div className="w-full p-2 flex flex-col gap-1 justify-center items-center">
+            <button className="w-10 h-10 bg-gray-400 rounded-xl hover:bg-[#5A358F] focus:bg-[#5A358F] flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-in-sgv"
+                className="w-7 h-7;"
                 viewBox="0 0 24 24"
                 id="home"
               >
@@ -26,16 +34,16 @@ const Home = () => {
                 ></path>
               </svg>
             </button>
-            <p className="h-in-p">Home</p>
+            <p className="overflow-hidden text-center">Home</p>
           </div>
           {/* Roket */}
-          <div className="h-inn">
-            <button className="h-in-btn">
+          <div className="w-full p-2 flex flex-col gap-1 justify-center items-center">
+            <button className="w-10 h-10 bg-gray-400 rounded-xl hover:bg-[#5A358F] focus:bg-[#5A358F] flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlSpace="preserve"
                 viewBox="0 0 20 20"
-                className="h-in-sgv "
+                className="w-7 h-7"
                 stroke="white"
                 id="rocket"
               >
@@ -45,15 +53,15 @@ const Home = () => {
                 ></path>
               </svg>
             </button>
-            <p className="h-in-p">Onboard</p>
+            <p className="overflow-hidden text-center">Onboard</p>
           </div>
           {/* Client */}
-          <div className="h-inn">
-            <button className="h-in-btn">
+          <div className="w-full p-2 flex flex-col gap-1 justify-center items-center">
+            <button className="w-10 h-10 bg-gray-400 rounded-xl hover:bg-[#5A358F] focus:bg-[#5A358F] flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
-                className="h-in-sgv"
+                className="w-7 h-7"
                 id="client"
               >
                 <path
@@ -62,11 +70,11 @@ const Home = () => {
                 ></path>
               </svg>
             </button>
-            <p className="h-in-p">Client Users</p>
+            <p className="overflow-hidden text-center">Client Users</p>
           </div>
           {/* Sub */}
-          <div className="h-inn">
-            <button className="h-in-btn ">
+          <div className="w-full p-2 flex flex-col gap-1 justify-center items-center">
+            <button className="w-10 h-10 bg-gray-400 rounded-xl hover:bg-[#5A358F] focus:bg-[#5A358F] flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-in-sgv"
@@ -88,28 +96,28 @@ const Home = () => {
                 </defs>
               </svg>
             </button>
-            <p className="h-in-p">Client Subscriptions</p>
+            <p className="overflow-hidden text-center">Client Subscriptions</p>
           </div>
         </div>
       </div>
       {/* main bar */}
-      <main className="h-main">
+      <main className="w-10/12 h-full">
         {/* Nav Bar */}
-        <div className="h-nav-outer">
+        <div className="w-full pl-4 pr-6 h-14 bg-white flex flex-wrap justify-between items-center">
           {/* Home part */}
           <NavLink
             to="/home"
             className={({ isActive }) =>
-              `h-h-div ${isActive ? " h-h-div-active" : "h-h-div-inactive"}`
+              `h-full flex justify-center items-center hover:cursor-pointer text-[#6E4D9D] hover:text-blue-500 font-semibold hover:border-b-2 hover:border-blue-500 ${isActive ? "border-b-2 border-[#6E4D9D]" : "border-none"}`
             }
           >
             Home
           </NavLink>
           {/* Profile part */}
-          <div className="h-p-div">
+          <div className="flex justify-center items-center gap-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-p-svg"
+              className="w-5 h-5"
               id="bell"
               viewBox="0 0 1792 1792"
             >
@@ -119,25 +127,38 @@ const Home = () => {
               ></path>
             </svg>
 
-            <div className="h-p-inn">
-              <p className="h-p-1">msin</p>
-              <p className="h-p-2">msinghal</p>
+            <div className="flex h-full text-xs font-medium flex-col justify-end items-end">
+              <p className="text-sm">msin</p>
+              <p className="text-teal-400">msinghal</p>
               <p className="">mridul@fayredge.com</p>
             </div>
+            <div className="flex justify-center items-center gap-6">
             <img
-              className="h-p-image"
+              className="w-10 h-10 rounded-lg"
               src="https://plus.unsplash.com/premium_photo-1675080431524-3e7c85323972?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFuJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D"
+              onClick={toggleDropdown}
             />
+
+            {isDropdownOpen && (
+              <div className="absolute right-0 mt-20 w-48 bg-white border border-gray-300 rounded-lg shadow-lg">
+                <ul className="list-none m-0 p-0">
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a href="#profile">Profile</a></li>
+                  <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a href="#logout">Logout</a></li>
+                </ul>
+              </div>
+            )}
+            
+            </div>
           </div>
         </div>
         {/* Client div */}
-        <div className="h-c-outer">
-          <h2 className="h-c-h2">Clients</h2>
-          <div className="h-c-inn">
+        <div className="w-full pr-6 gap-3">
+          <h2 className="pt-3 pl-4 text-[#6E4D9D] font-semibold">Clients</h2>
+          <div className="flex gap-3 pl-4 h-14 justify-between bg-white py-1 rounded-r-xl items-center">
             {/* first div */}
-            <div className="h-c-f">
+            <div className="flex justify-center gap-2 items-start">
               {/* search box */}
-              <div className="h-c-s">
+              <div className="flex my-1 py-2 bg-[#F1F3FF] gap-1 rounded-lg">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -161,11 +182,11 @@ const Home = () => {
                 <input
                   type="text"
                   placeholder="Search..."
-                  className="h-c-s-input"
+                  className="bg-[#F1F3FF] focus:outline-none rounded-lg"
                 />
               </div>
               {/* Sort box */}
-              <div className="h-s-f-outer">
+              <div className="flex my-1 justify-center items-center py-1 gap-1 px-2 border-r-2">
                 <h3>Sort</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -178,11 +199,11 @@ const Home = () => {
                 </svg>
               </div>
               {/* Filter */}
-              <div className="h-s-f-outer">
+              <div className="flex my-1 justify-center items-center py-1 gap-1 px-2 border-r-2">
                 <h3>Filter</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-p-svg"
+                  className="w-5 h-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   id="sort"
@@ -202,7 +223,7 @@ const Home = () => {
                 </svg>
               </div>
               {/* Select All */}
-              <div className="h-s-outer">
+              <div className="flex my-1 justify-center items-center gap-1 py-1 px-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -220,14 +241,14 @@ const Home = () => {
               </div>
             </div>
             {/* second div */}
-            <div className="h-s-last">Export</div>
+            <div className="flex justify-center items-center pr-1 border-l-2 pl-2">Export</div>
           </div>
         </div>
         {/* Table Start Here */}
         <HomeTable />
-        <div className="h-b-outer">
-          <button className="h-b-btn">Assgn Client User(s)</button>
-          <button className="h-b-btn">Onboard New Client</button>
+        <div className="flex justify-start items-start gap-4 pl-4 pt-3">
+          <button className="px-6 py-2 text-center bg-[#5A358F] text-white font-semibold rounded-full">Assgn Client User(s)</button>
+          <button className="px-6 py-2 text-center bg-[#5A358F] text-white font-semibold rounded-full">Onboard New Client</button>
         </div>
       </main>
     </div>

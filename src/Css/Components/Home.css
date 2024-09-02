@@ -1,4 +1,4 @@
-.h-first {
+/* .h-first {
   @apply h-screen w-full flex bg-[#F8F9FE];
 }
 .h-sidebar {
@@ -15,14 +15,14 @@
 }
 .h-in-btn {
   @apply w-10 h-10 bg-gray-400 rounded-xl hover:bg-[#5A358F] focus:bg-[#5A358F] flex items-center justify-center;
-}
-.h-in-sgv {
+} */
+/* .h-in-sgv {
   @apply w-7 h-7;
 }
 .h-in-p {
   @apply overflow-hidden text-center;
-}
-.h-main {
+} */
+/* .h-main {
   @apply w-10/12 h-full;
 }
 .h-nav-outer {
@@ -83,12 +83,23 @@
 .h-s-last {
   @apply flex justify-center items-center pr-1 border-l-2 pl-2;
 }
- {
-  /* First Part Ends Here -----*/
-}
+
 .h-b-outer {
   @apply flex justify-start items-start gap-4 pl-4 pt-3;
 }
 .h-b-btn {
   @apply px-6 py-2 text-center bg-[#5A358F] text-white font-semibold rounded-full;
 }
+
+
+.dropdown-menu {
+  @apply absolute right-0 mt-20 w-48 bg-white border border-gray-300 rounded-lg shadow-lg;
+}
+
+.dropdown-menu ul {
+  @apply list-none m-0 p-0;
+}
+
+.dropdown-menu li {
+  @apply px-4 py-2 hover:bg-gray-100 cursor-pointer;
+} */

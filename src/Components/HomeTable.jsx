@@ -47,7 +47,7 @@ const HomeTable = () => {
                   Stakeholders in-scope
                 </th>
                 <th scope="col" className="h-t-2">
-                  Generals in-scope
+                  Cgannels in-scope
                 </th>
                 <th scope="col" className="h-t-3">
                   Action

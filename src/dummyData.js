@@ -1,1 +1,1 @@
-export const data = ["Amit", "vadent"];
+export const data = ["Mridul", "Mr.X"];
